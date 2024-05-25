@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLLNDotNetCore.ConsoleApp", "HLLNDotNetCore.ConsoleApp\HLLNDotNetCore.ConsoleApp.csproj", "{73B29D01-9939-45EB-8353-E783B8E16284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HLLNDotNetCore.ConsoleApp", "HLLNDotNetCore.ConsoleApp\HLLNDotNetCore.ConsoleApp.csproj", "{73B29D01-9939-45EB-8353-E783B8E16284}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{D5A32F2A-59DF-4547-95B8-C5DED33E807F}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLLNDotNetCore.PizzaApi", "HLLNDotNetCore.PizzaApi\HLLNDotNetCore.PizzaApi.csproj", "{15A9CF71-2DAC-4E35-B61A-3E1E13B47B44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{73B29D01-9939-45EB-8353-E783B8E16284}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73B29D01-9939-45EB-8353-E783B8E16284}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73B29D01-9939-45EB-8353-E783B8E16284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A9CF71-2DAC-4E35-B61A-3E1E13B47B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A9CF71-2DAC-4E35-B61A-3E1E13B47B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A9CF71-2DAC-4E35-B61A-3E1E13B47B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A9CF71-2DAC-4E35-B61A-3E1E13B47B44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

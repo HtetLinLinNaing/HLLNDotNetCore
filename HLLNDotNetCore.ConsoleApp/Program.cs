@@ -1,44 +1,24 @@
-﻿using AMMDotNetCore.ConsoleApp;
+﻿using HLLNDotNetCore.ConsoleApp.AdoDotNetExamples;
+using HLLNDotNetCore.ConsoleApp.DapperExamples;
+using HLLNDotNetCore.ConsoleApp.EFCoreExamples;
+using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;
+using System.Reflection;
+using System.Security.Cryptography;
+
 
 Console.WriteLine("Hello, World!");
-
-/* SqlConnectionStringBuilder stringBuilder = new SqlConnectionStringBuilder();
-stringBuilder.DataSource = "USER";
-stringBuilder.InitialCatalog = "HLLNDotNetCore";
-stringBuilder.UserID = "sa";
-stringBuilder.Password = "sa123";
-
-SqlConnection connection = new SqlConnection(stringBuilder.ConnectionString);
-connection.Open();
-Console.WriteLine("Connection Open.");
-
-string query = "select * from Tbl_Blog";
- SqlCommand cmd = new SqlCommand(query, connection);
-SqlDataAdapter SqlDataAdapter = new SqlDataAdapter(cmd);
-DataTable dt = new DataTable();
-SqlDataAdapter.Fill(dt); 
-
-connection.Close();
-Console.WriteLine("Connection Close");
-
-foreach (DataRow dr in dt.Rows)
-{
-    Console.WriteLine("Blog Id =>"+dr["BlogId"]);
-    Console.WriteLine("Blog Title =>" + dr["BlogTitle"]);
-    Console.WriteLine("Blog Author =>" + dr["BlogAuthor"]);
-    Console.WriteLine("Blog Content =>" + dr["BlogContent"]);
-    Console.WriteLine("-------------------------------");
-} */
-
-AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
-//adoDotNetExample.Read();
-//adoDotNetExample.Create("title", "author", "content");
-//adoDotNetExample.Update(11, "test title", "test author", "test content");
-//adoDotNetExample.Delete(11);
-adoDotNetExample.Edit(11);
-adoDotNetExample.Edit(1);
-
+AdoDotNet adoDotNet = new AdoDotNet();
+//adoDotNet.Create("Test title114", "Test author114", "Test content114");
+//adoDotNet.Read();
+adoDotNet.Update(5, "Test title22", "Test author2", "Test content");
+//adoDotNet.Delete(2004);
+//adoDotNet.Edit(2005);
+//DapperExample dapper = new DapperExample();
+//dapper.Run();
+//EFCoreExample efCoreExample = new EFCoreExample();
+//efCoreExample.Run();
 Console.ReadKey();
+
+
